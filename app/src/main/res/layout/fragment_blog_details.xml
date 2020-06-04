@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:id="@+id/blogDetails"
+    tools:context=".ui.home.blog.BlogDetails"
+android:background="@color/white">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/blog_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_app_icon"
+        />
+
+    <TextView
+        android:id="@+id/blog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/aktiv_grotesk"
+        android:text="Blog Title"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="27sp"
+        android:layout_below="@+id/blog_image" />
+
+
+
+    <TextView
+        android:id="@+id/blog_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/aktiv_grotesk"
+        android:text="Category"
+        android:textColor="@color/colorLightText"
+        android:textSize="16sp"
+        android:layout_below="@+id/blog_title" />
+
+    <TextView
+        android:id="@+id/blog_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/aktiv_grotesk"
+        android:text="Author"
+        android:textColor="@color/colorLightText"
+        android:textSize="16sp"
+        android:layout_below="@+id/blog_title"
+        android:layout_alignParentEnd="true"
+        android:gravity="end"
+        android:layout_marginEnd="24dp"
+        android:layout_toRightOf="@id/blog_category"/>
+
+    <TextView
+        android:id="@+id/blog_desc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/aktiv_grotesk"
+        android:text="Blog Description"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_below="@id/blog_category"
+        app:lineHeight="28dp" />
+
+
+
+
+
+</RelativeLayout>
+
+</ScrollView>

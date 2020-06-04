@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.app.ssfitness_dev.ui.authentication.login.AuthViewModel" />
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/ic_email"
+        app:startIconTint="@color/gray"
+        android:drawablePadding="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:singleLine="true"
+        app:boxCornerRadiusBottomEnd="@dimen/_16sdp"
+        app:boxCornerRadiusTopStart="@dimen/_16sdp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:padding="@dimen/_8sdp"
+        android:textColorHint="@color/gray"
+        android:layout_marginBottom="10dp"
+        android:hint="Email ID"
+        app:helperText="Only registered users will receive the link"
+        app:helperTextTextColor="@color/gray"
+        android:inputType="textEmailAddress"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/gray"
+        app:errorEnabled="true">
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialogEmail"
+        android:padding="@dimen/_8sdp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_dismiss"
+           android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:text="Dismiss"
+            android:background="@drawable/bottom_border"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="left"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_send"
+            android:text="Send"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_gravity="right"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

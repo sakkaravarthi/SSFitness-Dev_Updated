@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home_admin.blog.AddBlogFragment"
+    >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BLOG IMAGE COVER"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            android:id="@+id/tv_image"
+            android:gravity="center"
+            android:fontFamily="@font/aktiv_grotesk"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ImageView
+            android:layout_marginTop="@dimen/_16sdp"
+            android:id="@+id/blog_image"
+            android:src="@drawable/ic_fitness"
+            android:tint="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/tv_image"
+            android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BLOG TITLE"
+        android:id="@+id/tv_title"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_below="@id/blog_image"
+        android:gravity="center"
+        android:textSize="@dimen/_16ssp"
+        android:fontFamily="@font/aktiv_grotesk"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:id="@+id/et_title"
+        android:fontFamily="@font/work_sans"
+        android:background="@drawable/bottom_border"
+        android:layout_below="@+id/tv_title"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BLOG DESCRIPTION"
+        android:id="@+id/tv_description"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_below="@id/et_title"
+        android:gravity="center"
+        android:textSize="@dimen/_16ssp"
+        android:fontFamily="@font/aktiv_grotesk"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:id="@+id/et_description"
+        android:background="@drawable/bottom_border"
+        android:inputType="text|textMultiLine"
+        android:fontFamily="@font/work_sans"
+        android:layout_below="@+id/tv_description"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BLOG CATEGORY"
+
+        android:id="@+id/tv_category"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:gravity="center"
+        android:textSize="@dimen/_16ssp"
+        android:fontFamily="@font/aktiv_grotesk"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@id/et_description"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:id="@+id/et_category"
+        android:background="@drawable/bottom_border"
+        android:inputType="textMultiLine|text"
+        android:layout_below="@+id/tv_category"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:text="Add Blog"
+            android:id="@+id/button_addblog"
+            android:fontFamily="@font/work_sans"
+            android:layout_alignParentBottom="true"
+           android:padding="@dimen/_12sdp"
+           />
+
+    </RelativeLayout>

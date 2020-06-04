@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.app.ssfitness_dev.ui.home.therapy.TherapyViewModel" />
+    </data>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.therapy.TherapyFragment"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:id="@+id/chat_linear_layout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send a mail to your coach or use live chat option to chat for private therapy session."
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_chat_live"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+            android:text="Live Chat"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="@font/work_sans"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            app:cornerRadius="@dimen/_4sdp"
+            android:textSize="@dimen/_14ssp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:layout_marginRight="@dimen/_32sdp"
+            android:layout_below="@id/button_login"
+            android:id="@+id/linear_layout_divider">
+
+            <View
+                style="@style/Divider"
+                android:id="@+id/divider1"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:textSize="@dimen/_10ssp"
+                android:layout_height="wrap_content"
+                android:text="or"
+                android:id="@+id/or_text"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColor="@color/darkgray"/>
+            <View
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:id="@+id/divider2"
+                android:layout_weight="0.4"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                style="@style/Divider"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_chat_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+            android:text="Send Mail"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:fontFamily="@font/work_sans"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            app:cornerRadius="@dimen/_4sdp"
+            android:textSize="@dimen/_14ssp"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+</layout>

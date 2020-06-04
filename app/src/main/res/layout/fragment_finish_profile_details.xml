@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".ui.user.userprofile.FinishProfileDetailsFragment">
+
+    <nl.dionsegijn.konfetti.KonfettiView
+        android:id="@+id/viewKonfetti"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/congrats_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_32ssp"
+            android:text="Congratulations!"
+            android:gravity="center_horizontal"
+            android:id="@+id/text_view_congratulation"
+            android:fontFamily="@font/crimson_text"
+            android:textColor="@color/white"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/message"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/text_view_congratulation"
+            android:fontFamily="@font/crimson_text"
+            android:text="Thank you for completing the necessary details. Your profile has been succesfully created. You can now access your custom tailored workouts, diet plans, contact your coach with in-app chat option, view fitness blog and many more other exciting features "
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/_16sdp"
+            android:textSize="@dimen/_16ssp"
+            android:visibility="visible"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_finish_to_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:padding="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_32sdp"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:fontFamily="@font/work_sans"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            app:cornerRadius="@dimen/_4sdp"
+            android:textSize="@dimen/_14ssp"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

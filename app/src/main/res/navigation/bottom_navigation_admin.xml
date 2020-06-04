@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation_admin"
+    app:startDestination="@id/adminBlogFragment">
+
+    <fragment
+        android:id="@+id/adminBlogFragment"
+        android:name="com.app.ssfitness_dev.ui.home_admin.blog.AdminBlogFragment"
+        android:label="Admin Blog"
+        tools:layout="@layout/fragment_admin_blog" >
+        <action
+            android:id="@+id/action_adminBlogFragment_to_viewBlogsFragment"
+            app:destination="@id/viewBlogsFragment" />
+        <action
+            android:id="@+id/action_adminBlogFragment_to_addBlogFragment"
+            app:destination="@id/addBlogFragment" />
+        <action
+            android:id="@+id/action_adminBlogFragment_to_deleteBlogFragment"
+            app:destination="@id/deleteBlogFragment" />
+        <action
+            android:id="@+id/action_adminBlogFragment_to_modifyBlogFragment"
+            app:destination="@id/modifyBlogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminNutritionFragment"
+        android:name="com.app.ssfitness_dev.ui.home_admin.nutrition.AdminNutritionFragment"
+        android:label="Admin Nutrition"
+        tools:layout="@layout/fragment_admin_nutrition" />
+    <fragment
+        android:id="@+id/adminChatFragment"
+        android:name="com.app.ssfitness_dev.ui.home_admin.chat.AdminChatFragment"
+        android:label="Admin Chat"
+        tools:layout="@layout/fragment_admin_chat" />
+    <fragment
+        android:id="@+id/adminTherapyFragment"
+        android:name="com.app.ssfitness_dev.ui.home_admin.therapy.AdminTherapyFragment"
+        android:label="Admin Therapy"
+        tools:layout="@layout/fragment_admin_therapy" />
+    <fragment
+        android:id="@+id/adminWorkoutFragment"
+        android:name="com.app.ssfitness_dev.ui.home_admin.workout.AdminWorkoutFragment"
+        android:label="Admin Workout"
+        tools:layout="@layout/fragment_admin_workout" />
+    <fragment
+        android:id="@+id/addBlogFragment"
+        android:name="com.app.ssfitness_dev.ui.home_admin.blog.AddBlogFragment"
+        android:label="Add New Blog"
+        tools:layout="@layout/fragment_add_blog" />
+    <fragment
+        android:id="@+id/viewBlogsFragment"
+        android:name="com.app.ssfitness_dev.ui.home_admin.blog.ViewBlogsFragment"
+        android:label="View blog"
+        tools:layout="@layout/fragment_view_blogs" />
+    <fragment
+        android:id="@+id/deleteBlogFragment"
+        android:name="com.app.ssfitness_dev.ui.home_admin.blog.DeleteBlogFragment"
+        android:label="Delete Blog"
+        tools:layout="@layout/fragment_delete_blog" />
+    <fragment
+        android:id="@+id/modifyBlogFragment"
+        android:name="com.app.ssfitness_dev.ui.home_admin.blog.ModifyBlogFragment"
+        android:label="Modify Blog"
+        tools:layout="@layout/fragment_modify_blog" />
+</navigation>

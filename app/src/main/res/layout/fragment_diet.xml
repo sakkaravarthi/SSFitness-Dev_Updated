@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:background="@color/colorPrimaryDark"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/topAppBarLayout">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/topAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:title="Diet"
+                app:navigationIcon="@drawable/md_nav_back"
+                android:background="@color/colorPrimaryDark"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"
+                />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+            android:layout_below="@id/topAppBarLayout"
+            android:id="@+id/tv_activity_question"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_24sdp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/crimson_text"
+            android:text="Any diet preference ?"
+            android:layout_margin="@dimen/_16sdp"
+            />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_below="@id/topAppBarLayout"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_toRightOf="@id/tv_activity_question"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:background="@drawable/ic_info" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_group_diet"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_below="@id/tv_activity_question">
+
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:id="@+id/radio_no_preference"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/work_sans"
+                android:text="No Preference"
+                android:textColor="@color/white"
+                android:padding="@dimen/_16sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:button="@null"
+                android:background="@drawable/outline_btn_bg"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:id="@+id/radio_vegetarian"
+                android:fontFamily="@font/work_sans"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:text="Vegetarian"
+                android:textColor="@color/white"
+                android:padding="@dimen/_16sdp"
+                android:button="@null"
+                android:background="@drawable/outline_btn_bg"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:button="@null"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/work_sans"
+                android:id="@+id/radio_vegan"
+                android:text="Vegan"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:textColor="@color/white"
+                android:padding="@dimen/_16sdp"
+                android:background="@drawable/outline_btn_bg"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:button="@null"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/work_sans"
+                android:text="Non Vegetarian"
+                android:id="@+id/radio_nonveg"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:textColor="@color/white"
+                android:padding="@dimen/_16sdp"
+                android:background="@drawable/outline_btn_bg"/>
+        </RadioGroup>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_continue_to_finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:layout_gravity="end"
+            android:padding="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:fontFamily="@font/work_sans"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            app:cornerRadius="@dimen/_4sdp"
+            android:textSize="@dimen/_14ssp"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/adminBlogFragment"
+        android:icon="@drawable/ic_blog"
+        android:title="Today"/>
+
+    <item android:id="@+id/adminChatFragment"
+        android:icon="@drawable/ic_inbox"
+        android:title="Inbox"/>
+
+    <item android:id="@+id/adminWorkoutFragment"
+        android:icon="@drawable/ic_workout_yoga"
+        android:title="Workouts"/>
+
+    <item android:id="@+id/adminNutritionFragment"
+        android:icon="@drawable/ic_nutrition"
+        android:title="Nutrition"/>
+
+    <item android:id="@+id/adminTherapyFragment"
+        android:icon="@drawable/ic_therapy"
+        android:title="Therapy"/>
+
+</menu>

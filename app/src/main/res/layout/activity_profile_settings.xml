@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.profile.ProfileSettingsActivity"
+    android:background="@color/colorPrimaryDark"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topAppBarLayout">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="My Account"
+            app:navigationIcon="@drawable/md_nav_back"
+            android:background="@color/colorPrimary"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topAppBarLayout"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_52sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:src="@drawable/ic_account"
+        android:tint="@color/gray"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Display name"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_below="@id/profile_image"
+        android:textColor="@color/white"
+        android:fontFamily="@font/crimson_text"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/_24ssp"
+        android:textAllCaps="true"
+
+        android:id="@+id/profile_name"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_below="@id/profile_name"
+        android:textColor="@color/white"
+        android:fontFamily="@font/aktiv_grotesk"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/_16ssp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:id="@+id/profile_email"
+        />
+
+
+<!--
+<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:layout_below="@id/profile_email"
+        android:textColor="@color/white"
+        android:fontFamily="@font/aktiv_grotesk"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/_16ssp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:id="@+id/profile_status"
+        />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Height"
+                android:layout_below="@id/profile_status"
+                android:textColor="@color/white"
+                android:fontFamily="@font/aktiv_grotesk"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/_16ssp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:id="@+id/profile_height"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:layout_below="@id/profile_height"
+                android:textColor="@color/white"
+                android:fontFamily="@font/aktiv_grotesk"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/_16ssp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:id="@+id/profile_weight"
+                />
+-->
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/profile_email"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:background="@color/colorPrimaryDark">
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_membership"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:drawableRight="@drawable/ic_right"
+                    android:background="@color/transparent"
+                    android:text="Membership History"
+                    />
+
+                <View
+                    style="@style/Divider"
+                    android:id="@+id/divider1"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_below="@id/button_membership"
+                  />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_settings"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:drawableRight="@drawable/ic_right"
+                    android:background="@color/transparent"
+                    android:text="Settings"
+                    android:layout_below="@id/divider1"
+                    />
+
+                <View
+                    style="@style/Divider"
+                    android:id="@+id/divider2"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_below="@id/button_settings"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_faq"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:drawableRight="@drawable/ic_right"
+                    android:background="@color/transparent"
+                    android:text="FAQs"
+                    android:layout_below="@id/divider2"
+                    />
+
+                <View
+                    style="@style/Divider"
+                    android:id="@+id/divider3"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_below="@id/button_faq"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_aboutus"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:drawableRight="@drawable/ic_right"
+                    android:background="@color/transparent"
+                    android:text="About us"
+                    android:layout_below="@id/divider3"
+                    />
+
+                <View
+                    style="@style/Divider"
+                    android:id="@+id/divider4"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_below="@id/button_aboutus"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_terms"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:drawableRight="@drawable/ic_right"
+                    android:background="@color/transparent"
+                    android:text="Terms and Conditions"
+                    android:layout_below="@id/divider4"
+                    />
+
+                <View
+                    style="@style/Divider"
+                    android:id="@+id/divider5"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_below="@id/button_terms"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_privacy"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:drawableRight="@drawable/ic_right"
+                    android:background="@color/transparent"
+                    android:text="Privacy Policy"
+                    android:layout_below="@id/divider5"
+                    />
+
+                <View
+                    style="@style/Divider"
+                    android:id="@+id/divider6"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_below="@id/button_privacy"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_logout"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:drawableRight="@drawable/ic_right"
+                    android:background="@color/transparent"
+                    android:text="Logout"
+                    android:layout_below="@id/divider6"
+                    />
+
+                <View
+                    style="@style/Divider"
+                    android:id="@+id/divider7"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_below="@id/button_logout"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Version 1.0"
+                    android:gravity="center|center_horizontal"
+                    android:layout_below="@id/divider7"
+                    android:layout_marginTop="@dimen/_64sdp"
+                    android:fontFamily="@font/work_sans"
+                    android:textColor="@color/white"
+                    />
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

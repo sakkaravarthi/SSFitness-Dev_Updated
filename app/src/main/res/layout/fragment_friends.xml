@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.chat.FriendsFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/aktiv_grotesk"
+        android:gravity="center"
+        android:text="Search for Friends"
+        android:textSize="24sp"
+        android:id="@+id/text_view_search"/>
+
+    <EditText
+        android:id="@+id/btn_search_users"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_search"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/border"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:hint="Enter name..."
+        android:textColorHint="@color/darkgray"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_search"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/text_view_search"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:id="@+id/button_search"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginLeft="10dp"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/friends_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_search_users"
+        android:layout_marginTop="@dimen/_16sdp"/>
+</RelativeLayout>

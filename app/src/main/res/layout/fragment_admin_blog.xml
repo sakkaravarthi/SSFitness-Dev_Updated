@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home_admin.blog.AdminBlogFragment"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:id="@+id/app_logo"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:background="@drawable/ic_app_icon" />
+
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_below="@+id/app_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aktiv_grotesk"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:text="SHERRY SHABAN"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_26ssp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/login_subtitle"
+        android:layout_below="@+id/login_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aktiv_grotesk"
+        android:gravity="center_horizontal"
+        android:text="FITNESS | NUTRITION | THERAPY"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addBlogBtn"
+        android:text="Add New Blog"
+        android:padding="@dimen/_12sdp"
+        android:layout_marginLeft="@dimen/_32sdp"
+        android:layout_marginRight="@dimen/_32sdp"
+        android:layout_centerInParent="true"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteBlogBtn"
+        android:text="Delete Blogs"
+        android:padding="@dimen/_12sdp"
+        android:layout_below="@id/addBlogBtn"
+        android:layout_marginLeft="@dimen/_32sdp"
+        android:layout_marginRight="@dimen/_32sdp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/modifyBlogBtn"
+        android:text="Modify Blog"
+        android:padding="@dimen/_12sdp"
+        android:layout_below="@id/deleteBlogBtn"
+        android:layout_marginLeft="@dimen/_32sdp"
+        android:layout_marginRight="@dimen/_32sdp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewBlogBtn"
+        android:text="View all Blogs"
+        android:padding="@dimen/_12sdp"
+        android:layout_below="@id/modifyBlogBtn"
+        android:layout_marginLeft="@dimen/_32sdp"
+        android:layout_marginRight="@dimen/_32sdp"
+        />
+
+
+
+</RelativeLayout>

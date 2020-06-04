@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:background="@color/colorPrimaryDark"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:id="@+id/topAppBarLayout"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/topAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:title="Goal"
+                android:background="@color/colorPrimaryDark"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"
+                />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+            android:layout_below="@id/topAppBarLayout"
+            android:id="@+id/tv_goal_question"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_24sdp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/crimson_text"
+            android:text="What is your goal ?"
+            android:layout_margin="@dimen/_16sdp"
+            />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_below="@id/topAppBarLayout"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_toRightOf="@id/tv_goal_question"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:background="@drawable/ic_info" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_group_goal"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_below="@id/tv_goal_question">
+
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:id="@+id/radio_lose_weight"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/work_sans"
+                android:text="Lose Weight"
+                android:textColor="@color/white"
+                android:padding="@dimen/_16sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:button="@null"
+                android:background="@drawable/outline_btn_bg"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:id="@+id/radio_maintain_weight"
+                android:fontFamily="@font/work_sans"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:text="Maintain Weight"
+                android:textColor="@color/white"
+                android:padding="@dimen/_16sdp"
+                android:button="@null"
+                android:background="@drawable/outline_btn_bg"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:button="@null"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/work_sans"
+                android:id="@+id/radio_lean_body_mass"
+                android:text="Increase Lean Body Mass"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:textColor="@color/white"
+                android:padding="@dimen/_16sdp"
+                android:background="@drawable/outline_btn_bg"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:button="@null"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/work_sans"
+                android:text="Postpartum Recovery"
+                android:id="@+id/radio_postpartum"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:textColor="@color/white"
+                android:padding="@dimen/_16sdp"
+                android:background="@drawable/outline_btn_bg"/>
+        </RadioGroup>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_goal_activitylvl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:layout_gravity="end"
+            android:padding="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:fontFamily="@font/work_sans"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            app:cornerRadius="@dimen/_4sdp"
+            android:textSize="@dimen/_14ssp"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+</ScrollView>

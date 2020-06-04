@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:background="@drawable/ic_account"
+        android:id="@+id/user_single_profile"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_marginBottom="@dimen/_4sdp"/>
+
+    <TextView
+        android:id="@+id/user_single_name"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toRightOf="@id/user_single_profile"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display Name" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_8sdp"
+        android:layout_height="@dimen/_8sdp"
+        android:layout_toRightOf="@id/user_single_profile"
+        android:layout_below="@id/user_single_activity_level"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:src="@drawable/ic_online_status"
+        android:id="@+id/user_single_online_status"
+        />
+
+    <TextView
+        android:id="@+id/user_single_activity_level"
+        android:layout_below="@id/user_single_name"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/darkgray"
+        android:layout_toRightOf="@id/user_single_profile"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity" />
+
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.app.ssfitness_dev.ui.authentication.login.AuthViewModel" />
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:maxLength="3"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/bottom_border"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:id="@+id/et_kg"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="kg"
+            android:layout_weight="0.3"
+            android:id="@+id/tv_kg"
+            android:textSize="@dimen/_14ssp"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:maxLength="3"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/bottom_border"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:id="@+id/et_lb"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="lbs"
+            android:visibility="gone"
+            android:layout_weight="0.3"
+            android:id="@+id/tv_lb"
+            android:textSize="@dimen/_14ssp"/>
+
+        <Switch
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:id="@+id/switchWeight"
+            android:layout_marginLeft="@dimen/_16sdp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_weight_dismiss"
+           android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:text="Dismiss"
+            android:background="@drawable/bottom_border"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="left"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_weight_set"
+            android:text="Set"
+            android:padding="@dimen/_6sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_gravity="right"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

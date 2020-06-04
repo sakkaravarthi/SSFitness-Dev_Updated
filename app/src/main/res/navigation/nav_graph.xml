@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/goalFragment">
+
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.app.ssfitness_dev.ui.user.userprofile.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" >
+        <action
+            android:id="@+id/action_userProfileFragment_to_finishProfileDetailsFragment"
+            app:destination="@id/finishProfileDetailsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+        <action
+            android:id="@+id/action_userProfileFragment_to_dietFragment"
+            app:destination="@id/dietFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/goalFragment"
+        android:name="com.app.ssfitness_dev.ui.user.userprofile.GoalFragment"
+        android:label="fragment_goal"
+        tools:layout="@layout/fragment_goal" >
+        <action
+            android:id="@+id/action_goalFragment_to_activeLevelFragment"
+            app:destination="@id/activeLevelFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/activeLevelFragment"
+        android:name="com.app.ssfitness_dev.ui.user.userprofile.ActiveLevelFragment"
+        android:label="fragment_activity_level"
+        tools:layout="@layout/fragment_activity_level" >
+        <action
+            android:id="@+id/action_activeLevelFragment_to_dietFragment"
+            app:destination="@id/dietFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+        <action
+            android:id="@+id/action_activeLevelFragment_to_goalFragment"
+            app:destination="@id/goalFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/dietFragment"
+        android:name="com.app.ssfitness_dev.ui.user.userprofile.DietFragment"
+        android:label="fragment_diet"
+        tools:layout="@layout/fragment_diet" >
+        <action
+            android:id="@+id/action_dietFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+        <action
+            android:id="@+id/action_dietFragment_to_activeLevelFragment"
+            app:destination="@id/activeLevelFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/finishProfileDetailsFragment"
+        android:name="com.app.ssfitness_dev.ui.user.userprofile.FinishProfileDetailsFragment"
+        android:label="fragment_finish_profile_details"
+        tools:layout="@layout/fragment_finish_profile_details" />
+</navigation>

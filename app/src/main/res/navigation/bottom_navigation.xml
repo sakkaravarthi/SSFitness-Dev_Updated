@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/todayFragment">
+
+    <fragment
+        android:id="@+id/todayFragment"
+        android:name="com.app.ssfitness_dev.ui.home.blog.BlogFragment"
+        android:label="Today" >
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.app.ssfitness_dev.ui.home.chat.ChatFragment"
+        android:label="Inbox" />
+    <fragment
+        android:id="@+id/nutritionFragment"
+        android:name="com.app.ssfitness_dev.ui.home.nutrition.NutritionFragment"
+        android:label="Nutrition" />
+    <fragment
+        android:id="@+id/therapyFragment"
+        android:name="com.app.ssfitness_dev.ui.home.therapy.TherapyFragment"
+        android:label="Therapy" />
+    <fragment
+        android:id="@+id/workoutFragment"
+        android:name="com.app.ssfitness_dev.ui.home.workout.WorkoutFragment"
+        android:label="Workouts" />
+    <fragment
+        android:id="@+id/blogDetails"
+        android:name="com.app.ssfitness_dev.ui.home.blog.BlogDetails"
+        android:label="Blog Details"
+        tools:layout="@layout/fragment_blog_details" >
+        <argument
+            android:name="position"
+            app:argType="integer"
+            android:defaultValue="0" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/availableUsers"
+        android:name="com.app.ssfitness_dev.ui.home.chat.AvailableUsers"
+        android:label="Search Users"
+        tools:layout="@layout/fragment_available_users" >
+        <argument
+            android:name="user_id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/blogFitnessFragment"
+        android:name="com.app.ssfitness_dev.ui.home.blog.BlogFitnessFragment"
+        android:label="fragment_blog_fitness"
+        tools:layout="@layout/fragment_blog_fitness" />
+    <fragment
+        android:id="@+id/blogMindsetFragment"
+        android:name="com.app.ssfitness_dev.ui.home.blog.BlogMindsetFragment"
+        android:label="fragment_blog_mindset"
+        tools:layout="@layout/fragment_blog_mindset" />
+    <fragment
+        android:id="@+id/blogRecipesFragment"
+        android:name="com.app.ssfitness_dev.ui.home.blog.BlogRecipesFragment"
+        android:label="fragment_blog_recipes"
+        tools:layout="@layout/fragment_blog_recipes" />
+
+
+</navigation>
